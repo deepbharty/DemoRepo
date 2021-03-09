@@ -11,9 +11,4 @@ public class UserLoginTest {
 		System.out.println("Login successfully");
 	}
 	
-@Test
-	
-	public void logout() {
-		System.out.println("Login successfully");
-	}
 }
