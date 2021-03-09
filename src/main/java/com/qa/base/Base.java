@@ -18,7 +18,7 @@ public class Base {
 	public Base(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:\\Users\\Deepak Bharty\\eclipse-workspace\\E2EAutomationProject\\src\\main\\java\\com\\qa\\properties\\config.properties");
+			FileInputStream ip = new FileInputStream("D:\\Eclipse\\DemoGit\\DemoRepo\\src\\main\\java\\com\\qa\\properties\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -32,11 +32,11 @@ public class Base {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Deepak Bharty\\Downloads\\Programs\\Selenium\\chromedriver88.exe");	
+			System.setProperty("webdriver.chrome.driver",prop.getProperty("chromeDriver"));	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Deepak Bharty\\Downloads\\Programs\\Selenium\\geckodriver.exe");	
+			System.setProperty("webdriver.gecko.driver",prop.getProperty("fireFoxDriver"));	
 			driver = new FirefoxDriver(); 
 		}
 	
