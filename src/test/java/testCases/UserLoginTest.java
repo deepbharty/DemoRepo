@@ -10,4 +10,10 @@ public class UserLoginTest {
 	public void login() {
 		System.out.println("Login successfully");
 	}
+	
+@Test
+	
+	public void logout() {
+		System.out.println("Login successfully");
+	}
 }
