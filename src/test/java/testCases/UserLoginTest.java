@@ -28,11 +28,7 @@ public void viewUser() {
 	System.out.println("Navigate to Homepage");
 }
 
-@Test(priority=3)
 
-public void modifyUser() {
-	System.out.println("Navigate to Homepage");
-}
 
 	
 	@Test(priority=3)
